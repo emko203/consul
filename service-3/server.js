@@ -2,9 +2,9 @@ const consul = new (require('consul'))();
 const http = require('http');
 
 const service = {
-  name: 'my-service',
+  name: 'Service-3',
   address: '10.0.0.1',
-  port: 3000
+  port: 3002
 };
 
 consul.agent.service.register(service, (err) => {
